@@ -1,0 +1,14 @@
+curl ^"https://arya.spinetix.cloud/user/info^%^40solmani.ch/idp^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: en-US,en;q=0.9^" ^
+  -H ^"authorization;^" ^
+  -b ^"OptanonConsent=isGpcEnabled=0^&datestamp=Fri+Oct+24+2025+19^%^3A13^%^3A43+GMT^%^2B0200+(Central+European+Summer+Time)^&version=202302.1.0^&isIABGlobal=false^&hosts=^&consentId=deb437bf-735b-4e4e-b8df-6fd8d65342af^&interactionCount=1^&landingPath=https^%^3A^%^2F^%^2Farya.spinetix.cloud^%^2F^&groups=C0001^%^3A1^%^2CC0003^%^3A0^%^2CC0002^%^3A0^%^2CC0004^%^3A0^%^2CC0005^%^3A0^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://arya.spinetix.cloud/^" ^
+  -H ^"sec-ch-ua: ^\^"Chromium^\^";v=^\^"142^\^", ^\^"Google Chrome^\^";v=^\^"142^\^", ^\^"Not_A Brand^\^";v=^\^"99^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36^"

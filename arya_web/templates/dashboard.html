@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+  <h3>Dashboard</h3>
+  <section>
+    <h5>/v1/group/users/me</h5>
+    <pre class="code">{{ me | tojson(indent=2) }}</pre>
+  </section>
+  <section>
+    <h5>/v1/group/info</h5>
+    <pre class="code">{{ info | tojson(indent=2) }}</pre>
+  </section>
+  <section>
+    <h5>/v1/group/storage</h5>
+    <pre class="code">{{ storage | tojson(indent=2) }}</pre>
+  </section>
+</main>
+{% endblock %}
+

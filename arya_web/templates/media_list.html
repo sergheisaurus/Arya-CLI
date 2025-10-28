@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+  <h3>Media</h3>
+  <form method="get" class="grid">
+    <div><label>dir <input name="dir" value="{{ params.dir }}"></label></div>
+    <div><label>max <input name="max" value="{{ params.max }}" type="number"></label></div>
+    <div><label>validity <input name="validity" value="{{ params.validity }}" type="number"></label></div>
+    <div><label>width <input name="width" value="{{ params.width }}" type="number"></label></div>
+    <div><label>use_qsa <input name="use_qsa" value="{{ params.use_qsa }}"></label></div>
+    <div><label>q <input name="q" value="{{ request.args.get('q','') }}"></label></div>
+    <div><button type="submit">Search</button></div>
+  </form>
+
+  {% if items and items|length > 0 %}
+    <table role="grid">
+      <thead><tr><th>Name</th><th>Type</th><th>Preview</th><th>Modified</th><th>ID</th></tr></thead>
+      <tbody>
+        {% for it in items %}
+          <tr>
+            <td><a href="{{ url_for('main.media_detail', rid=it.get('resourceId') or it.get('id') ) }}">{{ it.get('name') }}</a></td>
+            <td>{{ it.get('type') }}</td>
+            <td>
+              {% set prev = (it.get('preview') or {}).get('url') %}
+              {% if prev %}
+                <img class="thumb" src="{{ proxy(prev) }}" alt="preview">
+              {% else %}
+                -
+              {% endif %}
+            </td>
+            <td>{{ it.get('modifiedAt') }}</td>
+            <td class="muted">{{ it.get('resourceId') or it.get('id') }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% if next_token %}
+      <p>
+        <a class="secondary" href="{{ url_for('main.media_list') }}?{{ next_qs }}">Next page →</a>
+      </p>
+    {% endif %}
+  {% else %}
+    <p>No media found (showing raw response below).</p>
+  {% endif %}
+
+  <details>
+    <summary>Raw response</summary>
+    <pre class="code">{{ raw | tojson(indent=2) }}</pre>
+  </details>
+</main>
+{% endblock %}

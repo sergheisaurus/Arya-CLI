@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+  <h3>Media: {{ rid }}</h3>
+
+  {% if preview_url %}
+    <p><img class="thumb" src="{{ preview_url }}" alt="preview"></p>
+    <p class="muted">Original preview URL:</p>
+    <pre class="code">{{ preview_raw }}</pre>
+  {% endif %}
+
+  <h5>Metadata</h5>
+  <pre class="code">{{ media | tojson(indent=2) }}</pre>
+
+  <p class="muted">If you click "Download" in the ARYA UI, capture that request path and we can add a direct download button here.</p>
+</main>
+{% endblock %}

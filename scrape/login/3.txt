@@ -1,0 +1,18 @@
+curl ^"https://cognito-idp.eu-central-1.amazonaws.com/^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: en-US,en;q=0.9^" ^
+  -H ^"cache-control: no-store^" ^
+  -H ^"content-type: application/x-amz-json-1.1^" ^
+  -H ^"origin: https://arya.spinetix.cloud^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://arya.spinetix.cloud/^" ^
+  -H ^"sec-ch-ua: ^\^"Chromium^\^";v=^\^"142^\^", ^\^"Google Chrome^\^";v=^\^"142^\^", ^\^"Not_A Brand^\^";v=^\^"99^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36^" ^
+  -H ^"x-amz-target: AWSCognitoIdentityProviderService.ConfirmDevice^" ^
+  -H ^"x-amz-user-agent: aws-amplify/5.0.4^" ^
+  --data-raw ^"^{^\^"DeviceKey^\^":^\^"eu-central-1_969d88f0-3a61-45db-a018-6ebed9695fd6^\^",^\^"AccessToken^\^":^\^"eyJraWQiOiJrNGR1ek42YmZ5Y1g5V1I0dGZ6d0VmY1ZlbEZJMG01SXEwNUJFbVNUYjlFPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJkZXZpY2Vfa2V5IjoiZXUtY2VudHJhbC0xXzk2OWQ4OGYwLTNhNjEtNDVkYi1hMDE4LTZlYmVkOTY5NWZkNiIsImNvZ25pdG86Z3JvdXBzIjpbInVubGVhc2giLCJkZWFsZXJfbGVkIiwidGFnc191c2VyIiwidXNlcl9hZG1pbiIsImFjY291bnRfYWRtaW4iLCJleHRlbmRlZCIsImVudGVycHJpc2UiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LWNlbnRyYWwtMS5hbWF6b25hd3MuY29tXC9ldS1jZW50cmFsLTFfc2pjemhjUUNYIiwiY2xpZW50X2lkIjoiYXQ2bGdxbnNucmp0YmhybDMwczZrbnZucyIsIm9yaWdpbl9qdGkiOiI4OTMzZjc1MS0zY2IyLTRhMDctOWQxOC0xOGRhOTc4ZTRlMTkiLCJldmVudF9pZCI6ImE1MDNhZDgwLTIyZmEtNDIwZi1hNmQ3LWY1MTM1NDdhMGEwMiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3NjEzMjYxNTgsImV4cCI6MTc2MTMyOTc1OCwiaWF0IjoxNzYxMzI2MTU5LCJqdGkiOiJjZDAwNmFlYi1kZmUyLTQxODctYTBmMi1jYzVmYWI2YjA3NDgiLCJ1c2VybmFtZSI6IjJiYjE1ZmU5LWQ1NDYtNGI5ZS05MTA3LTBiZTM5MDM0MDMxZiJ9.Vx4LBI0Zhq8Y9I9848VoiuGmp5HSuXZ3LdEFNUemAjzc1ciCFm5HvoWAa2h05G3zGAwXtFBwtKDQQzuVU0IhgbpygL0yAid3aWbqrbzmj0wYN45ygL003SN_yb3VNhNoo0HrPLjCbDEhDZeUGA3bGETZDVYr9h5IbuxAT_raWZYH9dU6Mo2S1DylkQmClVsqCN4talmCg-MB8VSuYX7mZci4fRjeYJra-U3QdjG7w35rrejK3fvvUQdINoP2PNQAhvWVhuCPWMXxeycsIg93eh0iQqomIoeTiIHkxitZfhgw84J2Oia_HgHHXpUG4KXJo9OlTNIolAuCRYj3jWW4Vg^\^",^\^"DeviceSecretVerifierConfig^\^":^{^\^"Salt^\^":^\^"CcIff+eU47S1BEb+PnKR1Q==^\^",^\^"PasswordVerifier^\^":^\^"AMN/h8xIEoaswtHBjOtTKIEr+lieksbpIxIVuhIWGCPzk7x0HJt61dWJ0dLSo+KukMmu9HTOUUoFSl4sfI8wvMe++TgpEgEr5oCtSl3Y8rO7OsiA3/7j7RNDp2Cx66ExALsXJn/2jwC9wZfMCPur2FJ8MhwIe5kEeLehp5G6MlG6M2ADNW6m6UWLZBPkE3+P+eeFHJRxFzSM6LoS5/XaoYKa0wAXJStAvIyU7aHGib1JG8N1jumB6u+UeI8TJebWplvKSuPEmIR3O77dOEkeOGcFyKjbUwB/bSM0LLXW6GIydlIT3PvkiMBfN5EvH1YnleQiafjIaRD5icle9sdIJ/cRQLs2cdMWMk7wEADFjqZrQXEHJjlnnap/+DifpoD7FOmaQRCsqbUvyTnrkHSv3CROC0X5bRtIEJnmg/QnMmGPy2HIicIae7Z/5dzwUD4javjz6m3jWm5siMouuacaji1ySE6bZ4juc693XEggq4sEXjsiMW9119yOGs+VAPZ9Sw==^\^"^},^\^"DeviceName^\^":^\^"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36^\^"^}^"

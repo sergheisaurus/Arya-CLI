@@ -1,0 +1,18 @@
+curl ^"https://cognito-idp.eu-central-1.amazonaws.com/^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: en-US,en;q=0.9^" ^
+  -H ^"cache-control: no-store^" ^
+  -H ^"content-type: application/x-amz-json-1.1^" ^
+  -H ^"origin: https://arya.spinetix.cloud^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://arya.spinetix.cloud/^" ^
+  -H ^"sec-ch-ua: ^\^"Chromium^\^";v=^\^"142^\^", ^\^"Google Chrome^\^";v=^\^"142^\^", ^\^"Not_A Brand^\^";v=^\^"99^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36^" ^
+  -H ^"x-amz-target: AWSCognitoIdentityProviderService.InitiateAuth^" ^
+  -H ^"x-amz-user-agent: aws-amplify/5.0.4^" ^
+  --data-raw ^"^{^\^"AuthFlow^\^":^\^"USER_SRP_AUTH^\^",^\^"ClientId^\^":^\^"at6lgqnsnrjtbhrl30s6knvns^\^",^\^"AuthParameters^\^":^{^\^"USERNAME^\^":^\^"info^@solmani.ch^\^",^\^"SRP_A^\^":^\^"ca20dbc67c6ef86e25c876292b155406e19201fc03b72660e1e18da87b833b842a2af5f702a6e6dcdf1673e5077d0501bb8543057d4371d4909236f88c08a866756036ca635fd0cbdf8ed5a2f3e1dd1601f7c63fd8e3ac1020e5744b063d50bac2da74a319b39fbb1787c1adfda1bc987a5e704226f8c49bde821461401c978a1c0e75a8f4bb44876f71b05737ddb229a26e8d55d9e698954badd280d59ddd78c6dcbd16678a8529f2a5f6b26ca5bfe539659f1ca36f8baf77a29aa941612dd5835065da2a13c3f82af16a6857d42cddc5122f9f6820cfde3edf0e806a8eb20e1b8c6b49da02dc3a922d95f58d020dbaecc86bc53f302fb16847faaccb08cdbad3f06790ac560d0ee8b214eed2e04c0d1d33b8782f39e2a44afcc886ddeb58bdf0a6a191455fbdaf57ac15e056d62c1b6ce1a298747addd11bb64d0535e9e7993debbb1b568d824cca39ca23ba181d5a2cb6f875c16aa7e9599acf3cab19b6e3b75cc8a98b3e7868cb1e8a28e3d459469d0dc58f71627b49b475e4ef359cd68^\^"^},^\^"ClientMetadata^\^":^{^}^}^"

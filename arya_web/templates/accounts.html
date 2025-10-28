@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+  <h3>Accounts</h3>
+  {% if data %}
+    <pre class="code">{{ data | tojson(indent=2) }}</pre>
+  {% else %}
+    <p>No accounts endpoint returned 200.</p>
+  {% endif %}
+</main>
+{% endblock %}
+

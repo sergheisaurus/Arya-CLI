@@ -1,0 +1,18 @@
+curl ^"https://cognito-idp.eu-central-1.amazonaws.com/^" ^
+  -H ^"accept: */*^" ^
+  -H ^"accept-language: en-US,en;q=0.9^" ^
+  -H ^"cache-control: no-store^" ^
+  -H ^"content-type: application/x-amz-json-1.1^" ^
+  -H ^"origin: https://arya.spinetix.cloud^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://arya.spinetix.cloud/^" ^
+  -H ^"sec-ch-ua: ^\^"Chromium^\^";v=^\^"142^\^", ^\^"Google Chrome^\^";v=^\^"142^\^", ^\^"Not_A Brand^\^";v=^\^"99^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36^" ^
+  -H ^"x-amz-target: AWSCognitoIdentityProviderService.RespondToAuthChallenge^" ^
+  -H ^"x-amz-user-agent: aws-amplify/5.0.4^" ^
+  --data-raw ^"^{^\^"ChallengeName^\^":^\^"PASSWORD_VERIFIER^\^",^\^"ClientId^\^":^\^"at6lgqnsnrjtbhrl30s6knvns^\^",^\^"ChallengeResponses^\^":^{^\^"USERNAME^\^":^\^"2bb15fe9-d546-4b9e-9107-0be39034031f^\^",^\^"PASSWORD_CLAIM_SECRET_BLOCK^\^":^\^"rk8V9VoC7GYm2n2/h3aKldu0bjAjHJMuTOQB13mEmaptA+uh4rkJEpSoq+V3wlbQUKpQNAo31WIXwEOXMNrfavKXbGI0vjhczYdKVaCwsCCDmhBvbn0dNgJFDKcD1HwvxKC2iTnWCpdhf633XlK6HBaU+OwPLYYa56q/Su21vBxMxF2F6lZjDfE2SF1hIaSrnr0Wvc+v9F78CRSs4gNmkM7TwTyFVxDSbPgbUdQw1r12LhW7/P/m840oIKALnonBHSIBpjix0tfGxtpz8vNoUwUC8ym+GS/oLBnDsWEdT8MG6OA+S1u6gSqTE0Dbo7CeU+KO7SnpgVerTY8yxFLCiyjNoC2COB1LMyNtn/zZe+JGax7XOvAh6vNAsJm08HGhkutMLTAqf95lF9N65wH5akUDatMNxiE2KtlY5vQXtfhC0Wx1ure/zBxD0FrzpZnRYwkqfKClc3K2T1Yv2WHnstX8dtm4BrHclMoLF3kmJsd0Ugi86K3x/yCFOIgMbz3VaCe6NDnjr9FUnlHZvxmo0tsDZ++XSPcyz01aNASz9A2ZVlKokeaMl7of/GLNYVk3rhCC5EYWfG+TO1zqp+kLBoltumwm0B4EWFI+DKIrYDlZF92PxFpkmV6NeNUpmpH2VL9GfE896wOb7T+zQW0Q/k60qeToEhe1HcS/20aReZ4J6LREyWM+OZtbZKCLaz5AibW9GHteBSjF5n/7MivTIEESUEX7OsdVjQXicTKs00a/rL80jlX6ybsKAJfKW4Iv/IUUYqi0PJlNP9/6/ZwQjK0YFn/nybVGVb09PggDA64afqZzX711fs8GOmnaRJ6/1lPPoBU5UyNR4dWwCm7PgH2Q1zOKswWJv+a8Oa2i13q82qKnf7/3H6q0jIX2b4qwNjomkM0NnGAUUt4NMNZpa9xwbwjSpQJ4phZmWrhU2tWW3GN49MQ0ZghA2aRuui5vKVmk47v+btIWIqXnX0/VWvWjzsA8MBXokwE0YGxlZUxPaG57iHMPTQKyvpTPe+PT0pu9IWh0ZhuwvRU2pQOGOMMjz0svTdA35B2TY7VKRZslPUQZjq21vHu+fqsguhvtkyWj3m0AJTBYxOAuIWlumTAX7orH8+hZ1J9EavGXZKDkCuhUHz0s0pKBkI+w2ksArJ15YPZT/ViHPwy26UlHVgEtdApzcyqILHs5c26Zd84hcwrqgCoXX0onBaYqCKBDvousoCEqhYkyt7oRoHvcrYP8klx+FPT4UD4vIGje1RWVaajU+l7egiumScVCld/ZS8FUYlQsYxJu2wO+EKHw7XqHxojEo/wUTDzOz4tMk/ng0A6Y2eZ1xZtj2nOPL+xvojOTS9ebnLSgljze/Qnq+tvjXxrA+bdD2rfGzD/+rR4ZuqbZqNKcCvgi470avfo1gs1odoR0jt+994pm3AYXp0GDp/Mfc500FhFwCVv7ZkHiszsSQ2JzrU/T6qUhhD+qTMQ48FaX8qfHb6KaLgJEIWJXfpCvv9OETgLbLFPoN2liyccAMszZ+gXwH+PfHtFcZ6jfg1CsDo4urOLezRL9oMUmWliTh1kQdXyxgmBkd1lbXG3GdPeDpJWB+0HvV4IFAaYWsHowRI/gq6aJs/ZTrQb6wDZP4JKHTvealVdKIiABc7JtEYFAiPfVX+I8NP+z1bit/JJn4md8vCKhXeUXC0BT8D9jUtLDMkbkGfUimT5KzwArxnqPlUbV^\^",^\^"TIMESTAMP^\^":^\^"Fri Oct 24 17:15:59 UTC 2025^\^",^\^"PASSWORD_CLAIM_SIGNATURE^\^":^\^"FOo295u/H7kzALjmBQ8pU4aPGE5WUF7T9TKdAFh+lzI=^\^"^},^\^"ClientMetadata^\^":^{^}^}^"

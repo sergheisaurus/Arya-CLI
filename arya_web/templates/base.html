@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ARYA Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" rel="stylesheet">
+  <style>
+    body { max-width: 1100px; margin: 2rem auto; }
+    header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
+    .muted { opacity:.7; font-size:.9em; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#0f172a0d; padding:.5rem .75rem; border-radius:8px; }
+    img.thumb { max-width: 240px; height:auto; border-radius:8px; }
+  </style>
+  {% block head %}{% endblock %}
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  <header>
+    <h2>ARYA Viewer</h2>
+    <nav>
+      <a href="{{ url_for('main.index') }}">Home</a>
+      <a href="{{ url_for('main.dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('main.accounts') }}">Accounts</a>
+      <a href="{{ url_for('main.media_list') }}">Media</a>
+      {% if authed %}
+        <a href="{{ url_for('main.logout') }}">Logout</a>
+      {% else %}
+        <a href="{{ url_for('main.login') }}">Login</a>
+      {% endif %}
+    </nav>
+  </header>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div>
+        {% for category, msg in messages %}
+          <article class="{{ 'secondary' if category=='ok' else 'contrast' if category=='error' else '' }}">
+            {{ msg }}
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  {% block content %}
+  <main>
+    <h3>Welcome</h3>
+    {% if authed %}
+      <p class="muted">Token cache present. Go to <a href="{{ url_for('main.dashboard') }}">Dashboard</a> or <a href="{{ url_for('main.media_list') }}">Media</a>.</p>
+      {% if cache %}
+        <p class="code">User: {{ cache.username }}</p>
+      {% endif %}
+    {% else %}
+      <p>Not logged in. <a href="{{ url_for('main.login') }}">Login</a></p>
+    {% endif %}
+  </main>
+  {% endblock %}
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+curl ^"https://arya.services.spinetix.com/v1/group/storage^" ^
+  -H ^"accept: application/json, text/plain, */*^" ^
+  -H ^"accept-language: en-US,en;q=0.9^" ^
+  -H ^"authorization: eyJraWQiOiJlWUZmQ1FMb29QUFI5R01tbEptaWxyN25LN3hPWDM0a0hpbG4wOEhYM253PSIsImFsZyI6IlJTMjU2In0.eyJlbnRpdGxlbWVudHMiOiJbXCJhcnlhXCIsXCJhY3RpdmF0ZVwiXSIsInN1YiI6IjJiYjE1ZmU5LWQ1NDYtNGI5ZS05MTA3LTBiZTM5MDM0MDMxZiIsImNvZ25pdG86Z3JvdXBzIjpbInVubGVhc2giLCJkZWFsZXJfbGVkIiwidGFnc191c2VyIiwidXNlcl9hZG1pbiIsImFjY291bnRfYWRtaW4iLCJleHRlbmRlZCIsImVudGVycHJpc2UiXSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LWNlbnRyYWwtMS5hbWF6b25hd3MuY29tXC9ldS1jZW50cmFsLTFfc2pjemhjUUNYIiwiY29nbml0bzp1c2VybmFtZSI6IjJiYjE1ZmU5LWQ1NDYtNGI5ZS05MTA3LTBiZTM5MDM0MDMxZiIsInByZWZlcnJlZF91c2VybmFtZSI6IjJiYjE1ZmU5LWQ1NDYtNGI5ZS05MTA3LTBiZTM5MDM0MDMxZiIsImN1c3RvbTp0b3NfYWNjZXB0X2RhdGUiOiIyMDIwLTAxLTI0IiwiYWNjb3VudF9mZWF0dXJlcyI6IntcInByb29mT2ZQbGF5XCI6XCJleHRlbmRlZFwiLFwicm9sbG91dF93ZWJwYWdlXzIyLTA5XCI6dHJ1ZSxcInJvbGxvdXRfZWxlbWVudGlfbWVkaWFfMjItMDdcIjp0cnVlfSIsImN1c3RvbTpyZWNlbnRfbG9naW5fZGF0ZSI6IjIwMjUtMTAtMjRUMTc6MTU6NTguOTQxWiIsIm9yaWdpbl9qdGkiOiI4OTMzZjc1MS0zY2IyLTRhMDctOWQxOC0xOGRhOTc4ZTRlMTkiLCJhdWQiOiJhdDZsZ3Fuc25yanRiaHJsMzBzNmtudm5zIiwiZXZlbnRfaWQiOiJhNTAzYWQ4MC0yMmZhLTQyMGYtYTZkNy1mNTEzNTQ3YTBhMDIiLCJjdXN0b206Z3JvdXBfaWQiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJ0b2tlbl91c2UiOiJpZCIsImN1c3RvbTpncm91cF9zdGFnZSI6InByb2QiLCJhdXRoX3RpbWUiOjE3NjEzMjYxNTgsImV4cCI6MTc2MTMyOTc1OCwiaWF0IjoxNzYxMzI2MTU5LCJqdGkiOiJmZDcxZDc3ZS1jYmU2LTQxOTQtOGQ4Zi0wMTI0NGFjMzA1OWMifQ.OV3u58mimMh2LNkqZyEETV4sdXYur5HGdjjwpKoXrobGGwVtm4U_WS9buzm6nMXan5zvoty6i9Z-YN347rpRjjYVLIeyDbHxtlbvgleqJyIwpMex9eSdsxsWOWx6NJZ5qOZ0kyDe13NoMjcyZG1jtRhfW1XWuZldodDftIVH-7fsZoPZXc5akonNk6VgBNtmgZQz-3QbkyD6wQ1XMk25K-dwL-81tHdWDr3743aE34dy-iNWru2INYC6JXFcrzS0PhqA_khuyfdhOGfwlRAeP7mMd78lfBX-UHtXjBmHyv6TaFBH9SJXVf32NY2J6IOt3FohxaezcxN_BMQAbCtE6w^" ^
+  -H ^"origin: https://arya.spinetix.cloud^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://arya.spinetix.cloud/^" ^
+  -H ^"sec-ch-ua: ^\^"Chromium^\^";v=^\^"142^\^", ^\^"Google Chrome^\^";v=^\^"142^\^", ^\^"Not_A Brand^\^";v=^\^"99^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: cross-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36^"
