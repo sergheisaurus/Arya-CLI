@@ -10,6 +10,7 @@ import requests
 import base64
 from pathlib import Path
 import time, base64
+from datetime import datetime, timezone
 
 BASE = "https://arya.services.spinetix.com"
 COGNITO_IDP = "https://cognito-idp.eu-central-1.amazonaws.com/"
@@ -34,6 +35,34 @@ DEFAULT_MEDIA_PARAMS = {
     "use_qsa": 1,
 }
 
+DEFAULT_PLAYER_MAX = 30
+
+OUTPUT_JSON_PATH: Optional[str] = None
+EXECUTION_STARTED_AT = time.time()
+
+def extract_output_json_arg(argv, parser: argparse.ArgumentParser):
+    """Extract --output-json appearing anywhere in argv; return (value, cleaned_argv)."""
+    output = None
+    cleaned = []
+    i = 0
+    while i < len(argv):
+        arg = argv[i]
+        if arg == "--output-json":
+            if i + 1 >= len(argv):
+                parser.error("--output-json option requires a value")
+            output = argv[i + 1]
+            i += 2
+            continue
+        if arg.startswith("--output-json="):
+            value = arg.split("=", 1)[1]
+            if not value:
+                parser.error("--output-json option requires a value")
+            output = value
+            i += 1
+            continue
+        cleaned.append(arg)
+        i += 1
+    return output, cleaned
 
 
 LOGIN_FILE = "login.json"
@@ -179,6 +208,55 @@ def load_tokens(token_path: str) -> Dict[str, Any]:
 def save_tokens(token_path: str, tokens: Dict[str, Any]) -> None:
     write_json(token_path, tokens)
 
+def emit_result(data: Any, summary: Optional[str] = None) -> None:
+    wrote_file = False
+    if OUTPUT_JSON_PATH:
+        payload = {
+            "command": " ".join(sys.argv),
+            "executed_at": datetime.now(timezone.utc).isoformat(),
+            "duration_seconds": round(max(0.0, time.time() - EXECUTION_STARTED_AT), 3),
+            "result": data,
+        }
+        try:
+            with open(OUTPUT_JSON_PATH, "w", encoding="utf-8") as f:
+                json.dump(payload, f, indent=2)
+            wrote_file = True
+        except Exception as exc:
+            raise SystemExit(f"Failed to write JSON output to '{OUTPUT_JSON_PATH}': {exc}")
+    if wrote_file:
+        message = summary or f"Result written to {OUTPUT_JSON_PATH}"
+        print(message)
+    else:
+        print(json.dumps(data, indent=2))
+
+def _player_query_params(max_value: Optional[int], status_only: bool) -> Dict[str, Any]:
+    params: Dict[str, Any] = {}
+    if max_value is not None:
+        params["max"] = max_value
+    elif DEFAULT_PLAYER_MAX is not None:
+        params["max"] = DEFAULT_PLAYER_MAX
+    if status_only:
+        params["statusOnly"] = 1
+    return params
+
+def _extract_players(payload: Any) -> Optional[list]:
+    if isinstance(payload, dict):
+        players = payload.get("players")
+        return players if isinstance(players, list) else None
+    if isinstance(payload, list):
+        return payload
+    return None
+
+def _filter_players(players: Optional[list], serial: Optional[str]) -> list:
+    if not serial:
+        return list(players or [])
+    serial_norm = serial.strip()
+    return [
+        p
+        for p in (players or [])
+        if isinstance(p, dict) and str(p.get("serialNumber", "")).strip() == serial_norm
+    ]
+
 def auth_header_id(id_token: str) -> Dict[str, str]:
     # Arya expects the raw JWT in `authorization`
     return {"authorization": id_token}
@@ -311,7 +389,7 @@ def cmd_login(args):
         "refresh_token": tokens.get("refresh_token"),
         "device_key": tokens.get("device_key"),
     }
-    print(json.dumps(out, indent=2))
+    emit_result(out)
 
 def cmd_switch(args):
     token_path = pick_tokens_file(args.token_file)
@@ -320,7 +398,7 @@ def cmd_switch(args):
     gid = current_group_id(tokens)
     headers = auth_header_id(tokens["id_token"]) if tokens.get("id_token") else {}
     gname = _lookup_group_name(headers, gid) if gid else None
-    print(json.dumps({"message": "Account selected", "group_id": gid, "group_name": gname}, indent=2))
+    emit_result({"message": "Account selected", "group_id": gid, "group_name": gname})
 
 def _lookup_group_name(headers: Dict[str, str], group_id: Optional[str]) -> Optional[str]:
     # 1) Try /v1/group/info (fast, current account)
@@ -392,7 +470,7 @@ def cmd_whoami(args):
         "exp": payload.get("exp"),
         "username": payload.get("cognito:username"),
     }
-    print(json.dumps(out, indent=2))
+    emit_result(out)
 
 def cmd_current(args):
     token_path = pick_tokens_file(args.token_file)
@@ -403,11 +481,9 @@ def cmd_current(args):
     ensure_ok(info)
     me = requests.get(f"{BASE}/v1/group/users/me", headers=h)
     ensure_ok(me)
-    print(json.dumps({"group_info": info.json(), "me": me.json()}, indent=2))
+    emit_result({"group_info": info.json(), "me": me.json()})
 
-def cmd_accounts(args):
-    token_path = pick_tokens_file(args.token_file)
-    tokens = get_ready_tokens(token_path)
+def fetch_accounts_list(tokens: Dict[str, Any]) -> list:
     h = auth_header_id(tokens["id_token"])
     tried = []
 
@@ -417,24 +493,46 @@ def cmd_accounts(args):
         return r if r.ok else None
 
     r = (
-        try_get(f"{BASE}/v1/group/accounts") or
-        try_get(f"{BASE}/v1/accounts") or
-        try_get(f"{BASE}/v1/group/accounts/list")
+        try_get(f"{BASE}/v1/group/accounts")
+        or try_get(f"{BASE}/v1/accounts")
+        or try_get(f"{BASE}/v1/group/accounts/list")
     )
     if not r:
         raise SystemExit("Could not list accounts. Tried:\n  " + "\n  ".join(tried))
 
     data = r.json()
-    arr = data.get("accounts") if isinstance(data, dict) and "accounts" in data else (
-        data if isinstance(data, list) else data.get("items", [])
-    )
+    if isinstance(data, dict) and "accounts" in data:
+        arr = data.get("accounts")
+    elif isinstance(data, list):
+        arr = data
+    elif isinstance(data, dict):
+        arr = data.get("items", [])
+    else:
+        arr = []
+
     items = []
     for it in arr or []:
-        acc_id = it.get("groupId") or it.get("id") or it.get("accountId") or it.get("gid")
-        name = it.get("name") or it.get("displayName") or it.get("title") or ""
+        acc_id = (
+            it.get("groupId")
+            or it.get("id")
+            or it.get("accountId")
+            or it.get("gid")
+        )
+        name = (
+            it.get("name")
+            or it.get("displayName")
+            or it.get("title")
+            or ""
+        )
         if acc_id:
             items.append({"accountId": acc_id, "name": name})
-    print(json.dumps(items, indent=2))
+    return items
+
+def cmd_accounts(args):
+    token_path = pick_tokens_file(args.token_file)
+    tokens = get_ready_tokens(token_path)
+    items = fetch_accounts_list(tokens)
+    emit_result(items)
 
 def cmd_media(args):
     token_path = pick_tokens_file(args.token_file)
@@ -458,7 +556,99 @@ def cmd_media(args):
 
     r = requests.get(f"{BASE}/v1/media", headers=h, params=params)
     ensure_ok(r)
-    print(json.dumps(r.json(), indent=2))
+    emit_result(r.json())
+
+def cmd_players(args):
+    token_path = pick_tokens_file(args.token_file)
+
+    if args.account:
+        ensure_selected_account(args.account, token_path, bake=True)
+
+    tokens = get_ready_tokens(token_path)
+    h = auth_header_id(tokens["id_token"])
+
+    params = _player_query_params(args.max, args.status_only)
+
+    r = requests.get(f"{BASE}/v1/player", headers=h, params=params)
+    ensure_ok(r)
+    payload = r.json()
+
+    if args.serial:
+        players = _extract_players(payload)
+        payload = {"players": _filter_players(players, args.serial)}
+
+    emit_result(payload)
+
+def cmd_players_all(args):
+    token_path = pick_tokens_file(args.token_file)
+    tokens = get_ready_tokens(token_path)
+    original_group = current_group_id(tokens)
+
+    accounts = fetch_accounts_list(tokens)
+    results = []
+    errors = []
+
+    params = _player_query_params(args.max, args.status_only)
+
+    for account in accounts:
+        acc_id = account.get("accountId")
+        if not acc_id:
+            continue
+        try:
+            tokens = ensure_selected_account(acc_id, token_path, bake=True)
+            headers = auth_header_id(tokens["id_token"])
+            resp = requests.get(f"{BASE}/v1/player", headers=headers, params=params)
+            if not resp.ok:
+                try:
+                    err_body = resp.json()
+                except Exception:
+                    err_body = resp.text
+                errors.append(
+                    {
+                        "accountId": acc_id,
+                        "accountName": account.get("name"),
+                        "status": resp.status_code,
+                        "error": err_body,
+                    }
+                )
+                continue
+            payload = resp.json()
+            players = _extract_players(payload)
+            filtered_players = _filter_players(players, args.serial)
+            results.append(
+                {
+                    "accountId": acc_id,
+                    "accountName": account.get("name"),
+                    "players": filtered_players,
+                }
+            )
+        except SystemExit:
+            raise
+        except Exception as exc:
+            errors.append(
+                {
+                    "accountId": acc_id,
+                    "accountName": account.get("name"),
+                    "error": str(exc),
+                }
+            )
+
+    if original_group:
+        try:
+            ensure_selected_account(original_group, token_path, bake=True)
+        except SystemExit:
+            pass
+        except Exception:
+            pass
+
+    summary = None
+    if OUTPUT_JSON_PATH:
+        total_players = sum(len(acc.get("players", [])) for acc in results)
+        summary = (
+            f"Wrote players for {len(results)} accounts "
+            f"({total_players} players, {len(errors)} errors) to {OUTPUT_JSON_PATH}"
+        )
+    emit_result({"accounts": results, "errors": errors}, summary=summary)
 def cmd_mediaget(args):
     token_path = pick_tokens_file(args.token_file)
     tokens = get_ready_tokens(token_path)
@@ -466,11 +656,15 @@ def cmd_mediaget(args):
     params = {"use_qsa": 1} if args.use_qsa else {}
     r = requests.get(f"{BASE}/v1/media/{args.resource_id}", headers=h, params=params)
     ensure_ok(r)
-    print(json.dumps(r.json(), indent=2))
+    emit_result(r.json())
 
 def main():
     ap = argparse.ArgumentParser(prog="arya_cli", description="Arya CLI")
     ap.add_argument("--token-file", help="Path to token file (default: auto-detect among common names)")
+    ap.add_argument(
+        "--output-json",
+        help="Write command output (with metadata) to this JSON file",
+    )
 
     sub = ap.add_subparsers(dest="cmd")
 
@@ -502,16 +696,59 @@ def main():
     sp_media.add_argument("-q", help="search query")
     sp_media.set_defaults(func=cmd_media)
 
+    sp_players = sub.add_parser("players", help="List players for the current account")
+    sp_players.add_argument("--account", help="Optional: switch to this account first (does PUT + refresh)")
+    sp_players.add_argument(
+        "--max",
+        type=int,
+        default=DEFAULT_PLAYER_MAX,
+        help="Maximum number of players to return (default: %(default)s)",
+    )
+    sp_players.add_argument(
+        "--status-only",
+        action="store_true",
+        help="Request compact status info (sets statusOnly=1 on the API call)",
+    )
+    sp_players.add_argument(
+        "--serial",
+        help="Filter the returned list to a specific serial number (client-side filter)",
+    )
+    sp_players.set_defaults(func=cmd_players)
+
+    sp_players_all = sub.add_parser("players-all", help="List players for every accessible account")
+    sp_players_all.add_argument(
+        "--max",
+        type=int,
+        default=DEFAULT_PLAYER_MAX,
+        help="Maximum number of players to request per account (default: %(default)s)",
+    )
+    sp_players_all.add_argument(
+        "--status-only",
+        action="store_true",
+        help="Request compact status info for each account (sets statusOnly=1)",
+    )
+    sp_players_all.add_argument(
+        "--serial",
+        help="Filter players by serial number across all accounts (client-side filter)",
+    )
+    sp_players_all.set_defaults(func=cmd_players_all)
+
     # mediaget
     sp_mget = sub.add_parser("mediaget", help="Get a single media object")
     sp_mget.add_argument("resource_id")
     sp_mget.add_argument("--no-qsa", dest="use_qsa", action="store_false", default=True)
     sp_mget.set_defaults(func=cmd_mediaget)
 
-    args = ap.parse_args()
+    argv = sys.argv[1:]
+    extracted_output, argv = extract_output_json_arg(argv, ap)
+    args = ap.parse_args(argv)
     if not args.cmd:
         ap.print_help()
         sys.exit(0)
+    global OUTPUT_JSON_PATH
+    OUTPUT_JSON_PATH = extracted_output if extracted_output is not None else args.output_json
+    if OUTPUT_JSON_PATH is not None:
+        setattr(args, "output_json", OUTPUT_JSON_PATH)
     args.func(args)
 
 if __name__ == "__main__":

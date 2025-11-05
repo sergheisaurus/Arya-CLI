@@ -1,0 +1,1625 @@
+{
+  "command": "arya_cli.py players-all --status-only --output-json all_players.json",
+  "executed_at": "2025-11-05T14:06:58.031072+00:00",
+  "duration_seconds": 371.35,
+  "result": {
+    "accounts": [
+      {
+        "accountId": "b5EhxLhy7I7VTbXPDH8jB3prSSapD46R4OHR",
+        "accountName": " SUSHI ZEN",
+        "players": []
+      },
+      {
+        "accountId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+        "accountName": "ARPEJE",
+        "players": [
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "001d50205ad9",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "001d50205ae3",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "001d50205aa4",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          },
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "X24633SH",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "X246EBHE",
+            "status": "ok",
+            "online": true,
+            "degraded": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "001d50205ac3",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          },
+          {
+            "groupId": "GBzqJwSYh9BsfwTrbaFZIHFFfWGuYHzCnx7Bs6irfC0",
+            "serialNumber": "001d50205ae7",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "s0xvO09QZ8vXl0Kx0KJ8BCQv1YP22Ad01wDALvvYrFQ",
+        "accountName": "BO Plastiline SA",
+        "players": [
+          {
+            "groupId": "s0xvO09QZ8vXl0Kx0KJ8BCQv1YP22Ad01wDALvvYrFQ",
+            "serialNumber": "001d50205b2b",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.6.5-3.0.37966",
+            "inArya": true
+          },
+          {
+            "groupId": "s0xvO09QZ8vXl0Kx0KJ8BCQv1YP22Ad01wDALvvYrFQ",
+            "serialNumber": "001d50205fae",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.6.5-3.0.37966",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "DDGfEdQ7A4QzEbhrQUCguJsS77yPeZVulZwJv41k",
+        "accountName": "CEDC",
+        "players": [
+          {
+            "groupId": "DDGfEdQ7A4QzEbhrQUCguJsS77yPeZVulZwJv41k",
+            "serialNumber": "X2L656CZ",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+        "accountName": "CICR",
+        "players": [
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67SQ6",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0.0-45ef4dae",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3467PQ2",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67TLA",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67SGR",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67SP4",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3467NYN",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3467SVF",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3467SCE",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67SMG",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67P7Q",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L63RV4",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3463S4Z",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-1.0.1-1881e811",
+            "inArya": true
+          },
+          {
+            "groupId": "B8cVLunDPiIZ4KuVFSJYxYDZZ4fln34dsOE2",
+            "serialNumber": "X3L67SAV",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.1-1.0.1-291f7ae0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+        "accountName": "Comadur",
+        "players": [
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2L6A8E7",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2466MRN",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X246BQDQ",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2466NJ8",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2L66NKR",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.5-1.0.0-2c483a1f",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X246AFVN",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2L66MP5",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2L66XC7",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2L69XHR",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "DL8gJyvQYWm5yYCc8o3EmmLZFcnTWOYmoZwB",
+            "serialNumber": "X2L66NEG",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "TZrEf2HhMf1zJURd1tG3pweZA21epMuLC9MJ6k7WaU",
+        "accountName": "Commune d'Alle",
+        "players": [
+          {
+            "groupId": "TZrEf2HhMf1zJURd1tG3pweZA21epMuLC9MJ6k7WaU",
+            "serialNumber": "X2L636W2",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "JAbfRhUygIPpLM2zdiGUUxf4Bi4L2Dddx7sS",
+        "accountName": "Commune de Bottens",
+        "players": [
+          {
+            "groupId": "JAbfRhUygIPpLM2zdiGUUxf4Bi4L2Dddx7sS",
+            "serialNumber": "X2L66HLS",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+        "accountName": "Commune de Bussigny",
+        "players": [
+          {
+            "groupId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+            "serialNumber": "X2L62Q5V",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-1.0.1-1881e811",
+            "inArya": true
+          },
+          {
+            "groupId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+            "serialNumber": "X2L62XWB",
+            "status": "ok",
+            "online": true,
+            "degraded": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+            "serialNumber": "X2L62THW",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+            "serialNumber": "X2L632YN",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+            "serialNumber": "001d50204fa9",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "hb6okKvu7zoUiqh1GOW6kjiEbPKbrtFe7vbLaaHqRw",
+            "serialNumber": "001d50204e80",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "7DWq2KGeSK9T0BYP88iK08qaUh5eJTPErHTc0x5n8",
+        "accountName": "Commune de Chavannes-sur-Moudon",
+        "players": [
+          {
+            "groupId": "7DWq2KGeSK9T0BYP88iK08qaUh5eJTPErHTc0x5n8",
+            "serialNumber": "X3467KH3",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "z5q3raathuQVEk4OJsw9bCPsceIhT5XWQJ1k",
+        "accountName": "Commune de Chexbres",
+        "players": [
+          {
+            "groupId": "z5q3raathuQVEk4OJsw9bCPsceIhT5XWQJ1k",
+            "serialNumber": "001d50205fc4",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+        "accountName": "Commune de Finhaut",
+        "players": [
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X2462JA8",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X2462T4P",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X2L62FKP",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X2L638HF",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X3L67MXX",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X2L65B3Y",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X3L67GHD",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.7.3-1.0.0-aec8d491",
+            "inArya": true
+          },
+          {
+            "groupId": "i0S8t3WLr4SR7Pn235WhFta9t8pd2HhHO9CI",
+            "serialNumber": "X3467GDJ",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.7.3-1.0.0-aec8d491",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "I8QaPv05SuPbZnTJeXBCRvU1b5KsCa6z0GXA",
+        "accountName": "Commune de Leysin",
+        "players": []
+      },
+      {
+        "accountId": "LWLAnPXUGswaTVCfQ7RerxBE8Csi7uBRQSyB",
+        "accountName": "Commune de Savigny",
+        "players": [
+          {
+            "groupId": "LWLAnPXUGswaTVCfQ7RerxBE8Csi7uBRQSyB",
+            "serialNumber": "X2466T8Y",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "iNe6yo2lqLdDFue1zjOl1jvzyIzBTIYuhNUC",
+        "accountName": "Commune de Vionnaz",
+        "players": [
+          {
+            "groupId": "iNe6yo2lqLdDFue1zjOl1jvzyIzBTIYuhNUC",
+            "serialNumber": "X246EJU6",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "iNe6yo2lqLdDFue1zjOl1jvzyIzBTIYuhNUC",
+            "serialNumber": "X246EC2Y",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "1ZYFwSNI7kNXgT4rHd7py2NRsiSrReAeWIU7",
+        "accountName": "Commune Orvin",
+        "players": [
+          {
+            "groupId": "1ZYFwSNI7kNXgT4rHd7py2NRsiSrReAeWIU7",
+            "serialNumber": "virtual-1733217447344",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "1ZYFwSNI7kNXgT4rHd7py2NRsiSrReAeWIU7",
+            "serialNumber": "virtual-1733217413151",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "DrROyVAjsW4zXdslq0yEPwvNQjeoQsGC73tGEeLWI",
+        "accountName": "Coop Aclens",
+        "players": [
+          {
+            "groupId": "DrROyVAjsW4zXdslq0yEPwvNQjeoQsGC73tGEeLWI",
+            "serialNumber": "X2L63KBV",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "2pu1BhdmF1wOSBOnHKkNJG45DDdMRVlFbHm9",
+        "accountName": "Demo - ADVANTAIL ",
+        "players": [
+          {
+            "groupId": "2pu1BhdmF1wOSBOnHKkNJG45DDdMRVlFbHm9",
+            "serialNumber": "X246BQ34",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "2pu1BhdmF1wOSBOnHKkNJG45DDdMRVlFbHm9",
+            "serialNumber": "virtual-CvMK7x3c77vN3",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "2pu1BhdmF1wOSBOnHKkNJG45DDdMRVlFbHm9",
+            "serialNumber": "virtual-xD1AqxGb6RU0k",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "SwrWNATW7GuqzxhmpXSWT217xFYGv9x38dxl",
+        "accountName": "Demo - Commune d'Etoy",
+        "players": [
+          {
+            "groupId": "SwrWNATW7GuqzxhmpXSWT217xFYGv9x38dxl",
+            "serialNumber": "X2L6DXSZ",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "SwrWNATW7GuqzxhmpXSWT217xFYGv9x38dxl",
+            "serialNumber": "virtual-CCNd08Mbccz98",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "GeDt5tNQrlcJ9ilDzQUmMkoPqGwOMlqeLd60",
+        "accountName": "Demo - Commune de Cugy",
+        "players": [
+          {
+            "groupId": "GeDt5tNQrlcJ9ilDzQUmMkoPqGwOMlqeLd60",
+            "serialNumber": "X2L6DVLM",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "GeDt5tNQrlcJ9ilDzQUmMkoPqGwOMlqeLd60",
+            "serialNumber": "virtual-5gpZKWYmd6Bus",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "fdhcVyDgs9H9mprhHZViK7QLfEnYE8CVVXVo",
+        "accountName": "Demo - Commune de Pont en Ogoz",
+        "players": [
+          {
+            "groupId": "fdhcVyDgs9H9mprhHZViK7QLfEnYE8CVVXVo",
+            "serialNumber": "virtual-MXhnhUKGnXqAi",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "OzrnDYco44r2zzWibcnBFCi1EgW1321fHrpa",
+        "accountName": "Demo - HEFP",
+        "players": [
+          {
+            "groupId": "OzrnDYco44r2zzWibcnBFCi1EgW1321fHrpa",
+            "serialNumber": "virtual-FZ1yba8ZTzTUR",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "OzrnDYco44r2zzWibcnBFCi1EgW1321fHrpa",
+            "serialNumber": "virtual-tIqzdIlw32avj",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "OzrnDYco44r2zzWibcnBFCi1EgW1321fHrpa",
+            "serialNumber": "virtual-9ZsCykcm1f5sZ",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "4d57PkWIY16Z70zO1SBDY8JfEevxbQPMKj5x",
+        "accountName": "Demo - Parking Management Services SA",
+        "players": [
+          {
+            "groupId": "4d57PkWIY16Z70zO1SBDY8JfEevxbQPMKj5x",
+            "serialNumber": "virtual-1738233728080",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "4d57PkWIY16Z70zO1SBDY8JfEevxbQPMKj5x",
+            "serialNumber": "virtual-1738233709080",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "4d57PkWIY16Z70zO1SBDY8JfEevxbQPMKj5x",
+            "serialNumber": "virtual-1738233670613",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "j7aEBGCNwPtj4At9OMkTC6i16EXIgmz7yEbn",
+        "accountName": "Demo - SIAALN",
+        "players": [
+          {
+            "groupId": "j7aEBGCNwPtj4At9OMkTC6i16EXIgmz7yEbn",
+            "serialNumber": "X246DTN6",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "HsCjNE3AwSu6dPnL4pIEVPkyRuXhP0GPvpki",
+        "accountName": "Demo - Ville de Morges",
+        "players": [
+          {
+            "groupId": "HsCjNE3AwSu6dPnL4pIEVPkyRuXhP0GPvpki",
+            "serialNumber": "X2L6DXVT",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "HsCjNE3AwSu6dPnL4pIEVPkyRuXhP0GPvpki",
+            "serialNumber": "X246DXG5",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "HsCjNE3AwSu6dPnL4pIEVPkyRuXhP0GPvpki",
+            "serialNumber": "X246DFY8",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "4Vmt3b4hlW6RxXqR3XdJqo3okFxYvg4qZdzg",
+        "accountName": "Eclair Vuilleumier S.A.",
+        "players": [
+          {
+            "groupId": "4Vmt3b4hlW6RxXqR3XdJqo3okFxYvg4qZdzg",
+            "serialNumber": "X246EG4C",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "sVAH1TAGQvo6JLuy3zcX85j7fhwSAX1iRrWX",
+        "accountName": "Espace Gruy\u00e8re",
+        "players": [
+          {
+            "groupId": "sVAH1TAGQvo6JLuy3zcX85j7fhwSAX1iRrWX",
+            "serialNumber": "virtual-1656487184422",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.7.3-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "ECgrnLaaR30EbD5v0lIF9ltdbALLJcgcWKQ2",
+        "accountName": "ETA",
+        "players": [
+          {
+            "groupId": "ECgrnLaaR30EbD5v0lIF9ltdbALLJcgcWKQ2",
+            "serialNumber": "virtual-1680681026979",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.7.5-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "6ac794c8-65bb-4355-a79d-d1ae088523a2",
+        "accountName": "Free-to-Use",
+        "players": [
+          {
+            "groupId": "6ac794c8-65bb-4355-a79d-d1ae088523a2",
+            "serialNumber": "virtual-1639424636105",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.7.2-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+        "accountName": "Genolier Innovation Hub SA",
+        "players": [
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X246E6M2",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X3L68WNA",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X3468VLD",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X3468WPT",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X3468WZF",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "001d50228869",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X246BQFU",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6E7ZH",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6E95W",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BPX8",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BRA9",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L66WQU",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BS4E",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X246BS2V",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BQ5P",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BQC9",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BQ2M",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X246BQ6A",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X2L6BQLN",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "CKvMgoJPcdwOxQ1reMi4JFabrP95hWKGSh5u",
+            "serialNumber": "X246BPZK",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "r7oyEkDkRzmYCXCDI6ASa3celfmoS0RYnb853syERM",
+        "accountName": "Henry Transports SA",
+        "players": [
+          {
+            "groupId": "r7oyEkDkRzmYCXCDI6ASa3celfmoS0RYnb853syERM",
+            "serialNumber": "X3L67ACT",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "r7oyEkDkRzmYCXCDI6ASa3celfmoS0RYnb853syERM",
+            "serialNumber": "X3L67BDZ",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "MlWKKQhSc2kNngW9uJGwdG89Kt2YhWTF6seUVopyWY",
+        "accountName": "HES-SO Valais",
+        "players": []
+      },
+      {
+        "accountId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+        "accountName": "INOVIL",
+        "players": [
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62PNU",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462ZME",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62ZE4",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L63393",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462YHM",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62PS4",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462YLC",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2463BF7",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462PQF",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462XL8",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L632XL",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62ZSB",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L6EJ7C",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L6EG7R",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462XK2",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462ZDZ",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62PLQ",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62ZNK",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462G97",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2462ZQ8",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L62ZLX",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L63BHL",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L63B2E",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2466XGY",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L6366M",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2463AY6",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L63C58",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2463BG5",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L63B82",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "d27cbd17-c67d-4104-ae34-fa4ce12ec8a3",
+            "serialNumber": "X2L63AWM",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "bN2Qeaaf6lGLo0tuU5ojzWWDbXZJE1l6YjH3",
+        "accountName": "LunaJets",
+        "players": [
+          {
+            "groupId": "bN2Qeaaf6lGLo0tuU5ojzWWDbXZJE1l6YjH3",
+            "serialNumber": "X3L67EQL",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+        "accountName": "Outlet Aubonne",
+        "players": [
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464B6H",
+            "status": "ok",
+            "online": true,
+            "degraded": true,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464YDD",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.7.4-1.0.1-e70888e0",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464YAF",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.7.4-1.0.1-e70888e0",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464C97",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464BPG",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464BZU",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464C65",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464XZE",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "serialNumber": "X2464CZQ",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+        "accountName": "RTS",
+        "players": [
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2L66VSU",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2L66LN7",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2466KA3",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2466PVN",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2L66XHH",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2466LQL",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "llH885pUj0SaCMVw8jotSauXjiI5bHVpJ3Ms",
+            "serialNumber": "X2L6BPY2",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+        "accountName": "Solmani SA",
+        "players": [
+          {
+            "groupId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+            "serialNumber": "X2463X99",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+            "serialNumber": "cc827f370391",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0.1-314c32d5",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "muM1kZoZjLd2OFq61AfYcc3um23y3twi7rxQ",
+        "accountName": "SportAccord",
+        "players": []
+      },
+      {
+        "accountId": "FwHi177TKO2sJQdCG1Bc1vzcnKPewQXVIEl8",
+        "accountName": "Stade Lausanne",
+        "players": [
+          {
+            "groupId": "FwHi177TKO2sJQdCG1Bc1vzcnKPewQXVIEl8",
+            "serialNumber": "X246ABGF",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.7.5-2.0.0-b715b4e7",
+            "inArya": true
+          },
+          {
+            "groupId": "FwHi177TKO2sJQdCG1Bc1vzcnKPewQXVIEl8",
+            "serialNumber": "virtual-1673431672369",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.7.5-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "FwHi177TKO2sJQdCG1Bc1vzcnKPewQXVIEl8",
+            "serialNumber": "virtual-1673431707866",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.7.5-1.0",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "mUaJwNXNhWhHglchs5McfZdzlUqCOiKpVI9W",
+        "accountName": "Tennis Club Le Ch\u00e2taignier",
+        "players": [
+          {
+            "groupId": "mUaJwNXNhWhHglchs5McfZdzlUqCOiKpVI9W",
+            "serialNumber": "X2L64EL9",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "oEvxd2L0PYzWQmsH7xI4wVSuuvq83SnVEi4L7tA",
+        "accountName": "Vall\u00e9e de Joux Tourisme",
+        "players": [
+          {
+            "groupId": "oEvxd2L0PYzWQmsH7xI4wVSuuvq83SnVEi4L7tA",
+            "serialNumber": "001d50207783",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          },
+          {
+            "groupId": "oEvxd2L0PYzWQmsH7xI4wVSuuvq83SnVEi4L7tA",
+            "serialNumber": "001d502077ec",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-2.0.0-b4815329",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "tuJQnvl1re16QDRsiPGvWJWquEYyatACHJfX",
+        "accountName": "Ville de Bulle - Totems",
+        "players": [
+          {
+            "groupId": "tuJQnvl1re16QDRsiPGvWJWquEYyatACHJfX",
+            "serialNumber": "X246BQ46",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "tuJQnvl1re16QDRsiPGvWJWquEYyatACHJfX",
+            "serialNumber": "X2L6E8F6",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "tuJQnvl1re16QDRsiPGvWJWquEYyatACHJfX",
+            "serialNumber": "X246EF48",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+        "accountName": "Ville de Lausanne",
+        "players": [
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X246EHBS",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X246EFTM",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-1.0.1-1881e811",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X246DXUA",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "virtual-SBGUpmfwk3PD8",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.6-1.0",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X2L6EAYU",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X246DXDB",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X246DTKG",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X2L6DX2E",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          },
+          {
+            "groupId": "C9Imao54d0mjxiYkTTI4g3eUABLMt7WFhcTO",
+            "serialNumber": "X2L6EJ58",
+            "status": "disconnected",
+            "online": false,
+            "firmwareVersion": "4.8.7-2.0.0-d2b8005a",
+            "inArya": true
+          }
+        ]
+      },
+      {
+        "accountId": "Efii3IPdv0Yp372hrzSQA5yHNymjIMRqm8f9",
+        "accountName": "VOXIA",
+        "players": [
+          {
+            "groupId": "Efii3IPdv0Yp372hrzSQA5yHNymjIMRqm8f9",
+            "serialNumber": "virtual-1731940606951",
+            "status": "ok",
+            "online": true,
+            "firmwareVersion": "4.8.3-1.0",
+            "inArya": true
+          }
+        ]
+      }
+    ],
+    "errors": []
+  }
+}
