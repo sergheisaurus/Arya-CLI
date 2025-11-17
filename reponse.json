@@ -1,0 +1,227 @@
+{
+    "resourceId": "pjMEFDIgqw53hURlb36TGM2vuC2C5SVbYt6G",
+    "templateId": "custom-0001",
+    "userId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+    "templateSetId": "IAg3UtAfnuN2Tmq2ITk2nL7NDsfEVhx18KEZ",
+    "type": "project",
+    "tags": [
+        "CFF"
+    ],
+    "name": "GARE-ALLAMAN TRANSPORTS",
+    "preview": {
+        "type": "svg",
+        "url": "https://arya.services.spinetix.com/v1/project/qsa/pjMEFDIgqw53hURlb36TGM2vuC2C5SVbYt6G/icon.svg?width=160&token=eyJraWQiOiJlWUZmQ1FMb29QUFI5R01tbEptaWxyN25LN3hPWDM0a0hpbG4wOEhYM253PSIsImFsZyI6IlJTMjU2In0.eyJlbnRpdGxlbWVudHMiOiJbXCJhcnlhXCIsXCJhY3RpdmF0ZVwiXSIsImN1c3RvbTp0YWdzIjoiW10iLCJzdWIiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1bmxlYXNoIiwiZGVhbGVyX2xlZCIsInRhZ3NfdXNlciIsInVzZXJfYWRtaW4iLCJhY2NvdW50X2FkbWluIiwiZXh0ZW5kZWQiLCJlbnRlcnByaXNlIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xX3NqY3poY1FDWCIsImNvZ25pdG86dXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjdXN0b206dG9zX2FjY2VwdF9kYXRlIjoiMjAyMC0wMS0yNCIsImFjY291bnRfZmVhdHVyZXMiOiJ7XCJwcm9vZk9mUGxheVwiOlwiYmFzaWNcIn0iLCJjdXN0b206cmVjZW50X2xvZ2luX2RhdGUiOiIyMDI1LTExLTE3VDE0OjAzOjMzLjQyNVoiLCJvcmlnaW5fanRpIjoiOWUxZjgxNWEtM2ZjZi00Y2I5LTgwNjQtOGUxNDE1YmJlM2ZmIiwiYXVkIjoiYXQ2bGdxbnNucmp0YmhybDMwczZrbnZucyIsImN1c3RvbTpncm91cF9pZCI6IlYzcXpyYVVDekZiRkZSb040UkJUWnlFS0hOb1BtNGNTWEwwSWMxRlBEWSIsInRva2VuX3VzZSI6ImlkIiwiY3VzdG9tOmdyb3VwX3N0YWdlIjoicHJvZCIsImF1dGhfdGltZSI6MTc2MTIyMjMzNCwiZXhwIjoxNzYzMzkxODEzLCJpYXQiOjE3NjMzODgyMTMsImp0aSI6Ijg2MmI5YTA4LTdiZGItNGQ1MC05NTNjLTg2MzJhZTg5NDBkYiJ9.GtiFsmhIc0uBVLOhxHNs3v8i8FtmdUZkp2RDpUosPAKAkZUWeChVN4rxQ6Xy28zb8PTtBLkcBnVIZncdtjgpXjsqycKCSy_pEXfkjQXgzBusDFQVLwpEvDuPg-7qZZC-6ZO0giGVH3GYFRB6AZ_wDPJTbwe2hLBHFUIBXrhpuw89bNRLMPD8RljEndOUJoe0t2qfO6J1ktDPkxZ3qAxTHEwVMn0AQQee-VuCywxArIUsvnleF0IMn9sUUaHgVF5W4siSngRZknJXKoxOsrCalAmZKXMEIV0lGopZjVtOaM4-kFHoegxzXQ5B4QkvOO8piTTZv1lDXws4puZPo24l6g&_=20251117T103712137Z"
+    },
+    "edit": {
+        "type": "svg",
+        "url": "https://arya.services.spinetix.com/v1/project/qsa/pjMEFDIgqw53hURlb36TGM2vuC2C5SVbYt6G/edit.svg?width=1280&token=eyJraWQiOiJlWUZmQ1FMb29QUFI5R01tbEptaWxyN25LN3hPWDM0a0hpbG4wOEhYM253PSIsImFsZyI6IlJTMjU2In0.eyJlbnRpdGxlbWVudHMiOiJbXCJhcnlhXCIsXCJhY3RpdmF0ZVwiXSIsImN1c3RvbTp0YWdzIjoiW10iLCJzdWIiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1bmxlYXNoIiwiZGVhbGVyX2xlZCIsInRhZ3NfdXNlciIsInVzZXJfYWRtaW4iLCJhY2NvdW50X2FkbWluIiwiZXh0ZW5kZWQiLCJlbnRlcnByaXNlIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xX3NqY3poY1FDWCIsImNvZ25pdG86dXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjdXN0b206dG9zX2FjY2VwdF9kYXRlIjoiMjAyMC0wMS0yNCIsImFjY291bnRfZmVhdHVyZXMiOiJ7XCJwcm9vZk9mUGxheVwiOlwiYmFzaWNcIn0iLCJjdXN0b206cmVjZW50X2xvZ2luX2RhdGUiOiIyMDI1LTExLTE3VDE0OjAzOjMzLjQyNVoiLCJvcmlnaW5fanRpIjoiOWUxZjgxNWEtM2ZjZi00Y2I5LTgwNjQtOGUxNDE1YmJlM2ZmIiwiYXVkIjoiYXQ2bGdxbnNucmp0YmhybDMwczZrbnZucyIsImN1c3RvbTpncm91cF9pZCI6IlYzcXpyYVVDekZiRkZSb040UkJUWnlFS0hOb1BtNGNTWEwwSWMxRlBEWSIsInRva2VuX3VzZSI6ImlkIiwiY3VzdG9tOmdyb3VwX3N0YWdlIjoicHJvZCIsImF1dGhfdGltZSI6MTc2MTIyMjMzNCwiZXhwIjoxNzYzMzkxODEzLCJpYXQiOjE3NjMzODgyMTMsImp0aSI6Ijg2MmI5YTA4LTdiZGItNGQ1MC05NTNjLTg2MzJhZTg5NDBkYiJ9.GtiFsmhIc0uBVLOhxHNs3v8i8FtmdUZkp2RDpUosPAKAkZUWeChVN4rxQ6Xy28zb8PTtBLkcBnVIZncdtjgpXjsqycKCSy_pEXfkjQXgzBusDFQVLwpEvDuPg-7qZZC-6ZO0giGVH3GYFRB6AZ_wDPJTbwe2hLBHFUIBXrhpuw89bNRLMPD8RljEndOUJoe0t2qfO6J1ktDPkxZ3qAxTHEwVMn0AQQee-VuCywxArIUsvnleF0IMn9sUUaHgVF5W4siSngRZknJXKoxOsrCalAmZKXMEIV0lGopZjVtOaM4-kFHoegxzXQ5B4QkvOO8piTTZv1lDXws4puZPo24l6g&_=20251117T103712137Z"
+    },
+    "play": {
+        "type": "html",
+        "url": "https://arya.services.spinetix.com/v1/project/qsa/pjMEFDIgqw53hURlb36TGM2vuC2C5SVbYt6G/play.html?width=1280&token=eyJraWQiOiJlWUZmQ1FMb29QUFI5R01tbEptaWxyN25LN3hPWDM0a0hpbG4wOEhYM253PSIsImFsZyI6IlJTMjU2In0.eyJlbnRpdGxlbWVudHMiOiJbXCJhcnlhXCIsXCJhY3RpdmF0ZVwiXSIsImN1c3RvbTp0YWdzIjoiW10iLCJzdWIiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1bmxlYXNoIiwiZGVhbGVyX2xlZCIsInRhZ3NfdXNlciIsInVzZXJfYWRtaW4iLCJhY2NvdW50X2FkbWluIiwiZXh0ZW5kZWQiLCJlbnRlcnByaXNlIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xX3NqY3poY1FDWCIsImNvZ25pdG86dXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjdXN0b206dG9zX2FjY2VwdF9kYXRlIjoiMjAyMC0wMS0yNCIsImFjY291bnRfZmVhdHVyZXMiOiJ7XCJwcm9vZk9mUGxheVwiOlwiYmFzaWNcIn0iLCJjdXN0b206cmVjZW50X2xvZ2luX2RhdGUiOiIyMDI1LTExLTE3VDE0OjAzOjMzLjQyNVoiLCJvcmlnaW5fanRpIjoiOWUxZjgxNWEtM2ZjZi00Y2I5LTgwNjQtOGUxNDE1YmJlM2ZmIiwiYXVkIjoiYXQ2bGdxbnNucmp0YmhybDMwczZrbnZucyIsImN1c3RvbTpncm91cF9pZCI6IlYzcXpyYVVDekZiRkZSb040UkJUWnlFS0hOb1BtNGNTWEwwSWMxRlBEWSIsInRva2VuX3VzZSI6ImlkIiwiY3VzdG9tOmdyb3VwX3N0YWdlIjoicHJvZCIsImF1dGhfdGltZSI6MTc2MTIyMjMzNCwiZXhwIjoxNzYzMzkxODEzLCJpYXQiOjE3NjMzODgyMTMsImp0aSI6Ijg2MmI5YTA4LTdiZGItNGQ1MC05NTNjLTg2MzJhZTg5NDBkYiJ9.GtiFsmhIc0uBVLOhxHNs3v8i8FtmdUZkp2RDpUosPAKAkZUWeChVN4rxQ6Xy28zb8PTtBLkcBnVIZncdtjgpXjsqycKCSy_pEXfkjQXgzBusDFQVLwpEvDuPg-7qZZC-6ZO0giGVH3GYFRB6AZ_wDPJTbwe2hLBHFUIBXrhpuw89bNRLMPD8RljEndOUJoe0t2qfO6J1ktDPkxZ3qAxTHEwVMn0AQQee-VuCywxArIUsvnleF0IMn9sUUaHgVF5W4siSngRZknJXKoxOsrCalAmZKXMEIV0lGopZjVtOaM4-kFHoegxzXQ5B4QkvOO8piTTZv1lDXws4puZPo24l6g&_=20251117T103712137Z"
+    },
+    "pages": {
+        "items": []
+    },
+    "style": {
+        "defaultColors": false,
+        "defaultLogo": false,
+        "items": [],
+        "defaultFont": false,
+        "userDefined": true
+    },
+    "setOptions": {
+        "logoColor": "#FFFFFF",
+        "backgroundColor": "#27353D",
+        "foregroundColor": "#00b9ba",
+        "textColor": "#ffffff",
+        "subtextColor": "#00b9ba",
+        "fontFamily": "Avenir LT Std",
+        "logo": {
+            "resourceId": "logo-0001",
+            "groupId": "default",
+            "name": "",
+            "tags": [],
+            "type": "img",
+            "height": 696,
+            "width": 990,
+            "modifiedAt": "2025-11-11T11:12:17.278Z",
+            "preview": {
+                "width": 990,
+                "height": 696,
+                "url": "https://media.services.spinetix.com/media/default/logo-0001/media.png?_=9e161b185774bd2bac825837c84f2132",
+                "type": "img"
+            },
+            "href": "https://media.services.spinetix.com/media/default/logo-0001/media.png?_=9e161b185774bd2bac825837c84f2132"
+        }
+    },
+    "data": {
+        "pages": [
+            {
+                "apps": [
+                    {
+                        "style": "jsontable",
+                        "id": "datatable",
+                        "draggable": true,
+                        "resizable": true,
+                        "removable": true,
+                        "extended": true
+                    },
+                    {
+                        "id": "settings",
+                        "tname": "templates.duration",
+                        "default": true
+                    },
+                    {
+                        "id": "tags",
+                        "tname": "templates.tags",
+                        "default": true,
+                        "type": "tags"
+                    },
+                    {
+                        "style": "media",
+                        "id": "media_id_1603276924162",
+                        "draggable": true,
+                        "resizable": true,
+                        "removable": true,
+                        "extended": true
+                    }
+                ],
+                "media": null,
+                "addApps": {},
+                "uid": "1641309632357mv9rqrmhrbr-0",
+                "order": "17e25ad7a1f",
+                "settings": {
+                    "preset": "default",
+                    "dur": "00:00:10",
+                    "refId": null,
+                    "frameBackgroundColorParsed": "#FFFFFF"
+                },
+                "tags": [
+                    "CFF"
+                ],
+                "datatable": {
+                    "choice0": "ALLAMAN",
+                    "backgroundColor": "#EB212E",
+                    "src": "https://transport.opendata.ch/v1/stationboard?station=[[GENEVE;COPPET;NYON;GLAND;ROLLE;ALLAMAN;ETOY;ST PREX;MORGES;RENENS;LAUSANNE]]&limit=15",
+                    "refresh": 600,
+                    "vertical": {
+                        "width": 1080,
+                        "top": 968,
+                        "left": 0,
+                        "height": 952
+                    },
+                    "cellHeight": 72,
+                    "rows": "stationboard",
+                    "textColor": "textColor",
+                    "editdata": true,
+                    "horizontal": {
+                        "width": 1920,
+                        "top": 544,
+                        "left": 0,
+                        "height": 536
+                    },
+                    "cells": "one,two,three,four,five,six",
+                    "activeTimestamp": 1641309636710,
+                    "header": "user",
+                    "lang": "fr_FR"
+                },
+                "datatable:six": {
+                    "property": "stop.platform",
+                    "fontSize": "auto",
+                    "textAlign": "end",
+                    "percent": "150px",
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:four": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "passList.3.station.name",
+                    "fontSize": "auto",
+                    "style": "text",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:one": {
+                    "filter": "time",
+                    "textAlign": "start",
+                    "property": "stop.departure",
+                    "fontSize": "auto",
+                    "style": "time",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "headerProperty": "0",
+                    "displayAlign": "center"
+                },
+                "datatable:two": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "passList.1.station.name",
+                    "fontSize": "auto",
+                    "style": "text",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:header": {
+                    "fontSize": "auto",
+                    "textAlign": "start",
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:five": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "to",
+                    "fontSize": "auto",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:three": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "passList.2.station.name",
+                    "fontSize": "auto",
+                    "style": "text",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "media_id_1603276924162": {
+                    "resourceId": "lg1bfRWKQbDN1IKnPRnPVhhk0CUeAgbT3JKetrqAdQ",
+                    "groupId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+                    "orignalId": "lg1bfRWKQbDN1IKnPRnPVhhk0CUeAgbT3JKetrqAdQ",
+                    "orignalWidth": 1280,
+                    "orignalHeight": 853,
+                    "horizontal": {
+                        "width": 1920,
+                        "top": 0,
+                        "left": 0,
+                        "height": 544
+                    },
+                    "type": "img",
+                    "tags": [],
+                    "name": "cq5dam.web.1280.1280.jpg",
+                    "height": 853,
+                    "width": 1280,
+                    "modifiedAt": "2021-10-13T11:07:18.620Z",
+                    "userId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+                    "preview": {
+                        "width": 1280,
+                        "height": 853,
+                        "url": "https://media.services.spinetix.com/media/2bb15fe9-d546-4b9e-9107-0be39034031f/lg1bfRWKQbDN1IKnPRnPVhhk0CUeAgbT3JKetrqAdQ/media.jpg?_=c756653091ed462e921c2d76fbc367a6&Expires=1763510400&Key-Pair-Id=KKXPBDJ5LRPHF&Signature=REw3J9-3WhHE7zN1OUv3EZ-oeTFMypqV0hukgk2KgwqtBZfomlLuH5u2aVMCDQtmWkSZd2Kkob3sTXuZuQrk2p33nP9pf24W-QfswPD9uBm7cSK4zXnq~CLHebszY0Z1WdYcyu6cdMk1tjeooyKhZTv2q3Ebv8deGOoIWdSpANyNdZcjNw8QSRgyE6c5TeFBhk1cdiAluKihRpLmLQsaDC~TbmA75CmSsv01NmKBQ7ieMtloCsuSIJrlq7E1Ia7SW3vddbFH95Hl-4TJbCigK8Ut54xcUenGlYfHwhuBTG7ksWo3TP1zki3vkP5Z1CUjsx--Y7wWNjCuIIn2-ksCUg__",
+                        "type": "img"
+                    },
+                    "href": "https://media.services.spinetix.com/media/2bb15fe9-d546-4b9e-9107-0be39034031f/lg1bfRWKQbDN1IKnPRnPVhhk0CUeAgbT3JKetrqAdQ/media.jpg?_=c756653091ed462e921c2d76fbc367a6&Expires=1763510400&Key-Pair-Id=KKXPBDJ5LRPHF&Signature=REw3J9-3WhHE7zN1OUv3EZ-oeTFMypqV0hukgk2KgwqtBZfomlLuH5u2aVMCDQtmWkSZd2Kkob3sTXuZuQrk2p33nP9pf24W-QfswPD9uBm7cSK4zXnq~CLHebszY0Z1WdYcyu6cdMk1tjeooyKhZTv2q3Ebv8deGOoIWdSpANyNdZcjNw8QSRgyE6c5TeFBhk1cdiAluKihRpLmLQsaDC~TbmA75CmSsv01NmKBQ7ieMtloCsuSIJrlq7E1Ia7SW3vddbFH95Hl-4TJbCigK8Ut54xcUenGlYfHwhuBTG7ksWo3TP1zki3vkP5Z1CUjsx--Y7wWNjCuIIn2-ksCUg__"
+                }
+            }
+        ],
+        "development": false,
+        "customEditUser": true,
+        "extendedUser": true,
+        "leashUser": false
+    }
+}

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import argparse
 import json
 import os
@@ -10,6 +11,14 @@ import base64
 from pathlib import Path
 import time, base64
 from datetime import datetime, timezone
+
+# Make sure to install pycognito: pip install pycognito
+try:
+    from pycognito import Cognito
+except ImportError:
+    print("Error: 'pycognito' library not found. Please install it with: pip install pycognito", file=sys.stderr)
+    sys.exit(1)
+
 
 BASE = "https://arya.services.spinetix.com"
 COGNITO_IDP = "https://cognito-idp.eu-central-1.amazonaws.com/"
@@ -79,17 +88,27 @@ def jwt_payload(token: str) -> dict:
 def srp_login_into_tokens_file(token_path: str) -> Dict[str, Any]:
     # minimal SRP using pycognito (same config you used)
     from pycognito import Cognito
+    if not os.path.exists(LOGIN_FILE):
+        raise SystemExit(f"Login error: '{LOGIN_FILE}' not found. Please create it with your email and password.")
+        
     with open(LOGIN_FILE, "r", encoding="utf-8") as f:
         creds = json.load(f)
     username = creds.get("email") or creds.get("username")
-    password = creds["password"]
+    password = creds.get("password")
+    if not username or not password:
+         raise SystemExit(f"Login error: '{LOGIN_FILE}' must contain 'email' (or 'username') and 'password'.")
+
     user = Cognito(
         user_pool_id="eu-central-1_sjczhcQCX",
         client_id="at6lgqnsnrjtbhrl30s6knvns",
         user_pool_region="eu-central-1",
         username=username,
     )
-    user.authenticate(password=password)
+    try:
+        user.authenticate(password=password)
+    except Exception as e:
+        raise SystemExit(f"Authentication failed: {e}")
+        
     now_ = int(time.time())
     payload = jwt_payload(user.access_token)
     device_key = payload.get("device_key")
@@ -349,7 +368,12 @@ def refresh_tokens(tokens: Dict[str, Any], token_path: str) -> Dict[str, Any]:
 def get_ready_tokens(token_path: str, allow_no_refresh: bool = True) -> Dict[str, Any]:
     tokens = load_tokens(token_path)
     if not tokens:
-        raise SystemExit(f"No tokens found. Provide a token file or run a login flow first. (Looked at '{token_path}')")
+        print(f"No tokens found at '{token_path}'. Attempting login...", file=sys.stderr)
+        try:
+            tokens = srp_login_into_tokens_file(token_path)
+            print("Login successful, tokens saved.", file=sys.stderr)
+        except SystemExit as e:
+            raise SystemExit(f"No tokens found and login failed. (Looked at '{token_path}')\n{e}")
 
     # if id_token still valid, use it
     if has_valid_id_token(tokens):
@@ -357,13 +381,31 @@ def get_ready_tokens(token_path: str, allow_no_refresh: bool = True) -> Dict[str
 
     # try refresh if possible
     if can_refresh(tokens):
-        return refresh_tokens(tokens, token_path)
+        try:
+            return refresh_tokens(tokens, token_path)
+        except SystemExit:
+            # Refresh failed (e.g., stale refresh token), fall back to SRP
+            print("Token refresh failed, attempting full login...", file=sys.stderr)
+            try:
+                tokens = srp_login_into_tokens_file(token_path)
+                print("Login successful, tokens saved.", file=sys.stderr)
+                return tokens
+            except SystemExit as e:
+                 raise SystemExit(f"Token refresh failed and re-login also failed.\n{e}")
 
     # if we get here and allow_no_refresh: proceed & let 401 tell us
     if allow_no_refresh and tokens.get("id_token"):
         return tokens
+    
+    # Final fallback: no valid token, can't refresh.
+    print("No valid id_token and refresh isn’t possible. Attempting login...", file=sys.stderr)
+    try:
+        tokens = srp_login_into_tokens_file(token_path)
+        print("Login successful, tokens saved.", file=sys.stderr)
+        return tokens
+    except SystemExit as e:
+        raise SystemExit(f"No valid tokens and login failed.\n{e}")
 
-    raise SystemExit("No valid id_token and refresh isn’t possible (missing refresh_token).")
 
 # ----------------------------
 # Commands
@@ -373,14 +415,24 @@ def cmd_login(args):
     # If you already used arya_fetch, you likely have a valid id_token there.
     tokens = load_tokens(token_path)
     if not tokens:
-        # optional: bootstrap via login.json (email/password) — not implemented here to avoid duplicating your working flow
-        raise SystemExit(
-            f"No tokens found in {token_path}. Run your working login/fetch once so tokens are saved, "
-            "or tell me to embed the full password flow here."
-        )
+        try:
+            tokens = srp_login_into_tokens_file(token_path)
+        except SystemExit as e:
+            raise SystemExit(
+                f"No tokens found in {token_path} and login failed.\n{e}\n"
+                f"Please create '{LOGIN_FILE}' with your 'email' and 'password'."
+            )
+            
     # Try refresh if needed and possible, else just print what we have.
     if not has_valid_id_token(tokens) and can_refresh(tokens):
-        tokens = refresh_tokens(tokens, token_path)
+        try:
+            tokens = refresh_tokens(tokens, token_path)
+        except SystemExit:
+             # Refresh failed, try SRP
+            try:
+                tokens = srp_login_into_tokens_file(token_path)
+            except SystemExit as e:
+                raise SystemExit(f"Token refresh failed and re-login also failed.\n{e}")
 
     out = {
         "access_token": tokens.get("access_token"),
@@ -657,6 +709,83 @@ def cmd_mediaget(args):
     ensure_ok(r)
     emit_result(r.json())
 
+# --- REPLACE THIS ENTIRE FUNCTION ---
+
+def cmd_copy_project(args):
+    """Copies a project from a source account to a destination account."""
+    token_path = pick_tokens_file(args.token_file)
+    
+    # 1. Get initial state so we can switch back later
+    print("Getting initial account state...")
+    initial_tokens = get_ready_tokens(token_path)
+    original_group_id = current_group_id(initial_tokens)
+    if not original_group_id:
+        raise SystemExit("Could not determine your starting account. Please run 'whoami' to check.")
+    print(f"Original account ID: {original_group_id}")
+
+    try:
+        # 2. Switch to SOURCE account and GET the project data
+        print(f"\nSwitching to source account: {args.from_account}...")
+        tokens_src = ensure_selected_account(args.from_account, token_path, bake=True)
+        headers_src = auth_header_id(tokens_src["id_token"])
+        
+        print(f"Fetching project '{args.project_id}' from source account...")
+        # Use the /v1/project/ endpoint to get the full data
+        r_get = requests.get(f"{BASE}/v1/project/{args.project_id}", headers=headers_src, params={"use_qsa": 1})
+        ensure_ok(r_get)
+        project_data = r_get.json()
+        print(f"Successfully fetched project: {project_data.get('name')}")
+
+        # 3. Switch to DESTINATION account and POST the project data
+        print(f"\nSwitching to destination account: {args.to_account}...")
+        tokens_dest = ensure_selected_account(args.to_account, token_path, bake=True)
+        headers_dest = auth_header_id(tokens_dest["id_token"])
+
+        # --- MODIFICATION ---
+        # Prepare payload
+        # As you suggested, we'll keep 'templateId' as 'custom-0001'
+        # and set 'templateSetId' to 'default'
+        post_payload = project_data.copy() # Make a copy to avoid modifying the original data
+        
+        original_tid = post_payload.get('templateId')
+        original_tsid = post_payload.get('templateSetId')
+
+        post_payload['templateId'] = "custom-0001"
+        post_payload['templateSetId'] = "default"
+        
+        print(f"Set 'templateId' to 'custom-0001' (was: {original_tid}).")
+        print(f"Set 'templateSetId' to 'default' (was: {original_tsid}).")
+        # --- END MODIFICATION ---
+        
+        print(f"Creating duplicate of '{post_payload.get('name')}' in destination account...")
+        r_post = requests.post(f"{BASE}/v1/project", headers=headers_dest, json=post_payload)
+        ensure_ok(r_post)
+        new_project_data = r_post.json()
+        
+        print("\n--- SUCCESS ---")
+        print(f"New project created: {new_project_data.get('name')}")
+        print(f"New project ID: {new_project_data.get('resourceId')}")
+        emit_result(new_project_data)
+
+    except Exception as e:
+        print(f"\n--- ERROR ---", file=sys.stderr)
+        print(f"An error occurred: {e}", file=sys.stderr)
+        # Re-raise if it's a SystemExit, otherwise print
+        if not isinstance(e, SystemExit):
+            import traceback
+            traceback.print_exc(file=sys.stderr)
+            
+    finally:
+        # 4. ALWAYS switch back to the original account
+        print(f"\nSwitching back to original account: {original_group_id}...")
+        try:
+            ensure_selected_account(original_group_id, token_path, bake=True)
+            print("Switched back successfully.")
+        except Exception as e:
+            print(f"Warning: Could not switch back to original account: {e}", file=sys.stderr)
+            
+# --- END OF REPLACEMENT ---
+
 def main():
     ap = argparse.ArgumentParser(prog="arya_cli", description="Arya CLI")
     ap.add_argument("--token-file", help="Path to token file (default: auto-detect among common names)")
@@ -665,7 +794,7 @@ def main():
         help="Write command output (with metadata) to this JSON file",
     )
 
-    sub = ap.add_subparsers(dest="cmd")
+    sub = ap.add_subparsers(dest="cmd", required=True)
 
     # login / whoami / current / accounts
     sp_login = sub.add_parser("login", help="Show/refresh tokens using existing token file")
@@ -738,16 +867,30 @@ def main():
     sp_mget.add_argument("--no-qsa", dest="use_qsa", action="store_false", default=True)
     sp_mget.set_defaults(func=cmd_mediaget)
 
+    # --- NEW CODE START ---
+    
+    # copy-project
+    sp_copy = sub.add_parser("copy-project", help="Copy a project from one account to another")
+    sp_copy.add_argument("project_id", help="The 'resourceId' of the project to copy")
+    sp_copy.add_argument("--from-account", required=True, dest="from_account", help="The Account ID to copy FROM")
+    sp_copy.add_argument("--to-account", required=True, dest="to_account", help="The Account ID to copy TO")
+    sp_copy.set_defaults(func=cmd_copy_project)
+    
+    # --- NEW CODE END ---
+
+
     argv = sys.argv[1:]
     extracted_output, argv = extract_output_json_arg(argv, ap)
     args = ap.parse_args(argv)
-    if not args.cmd:
+    if not hasattr(args, 'func'):
         ap.print_help()
         sys.exit(0)
+        
     global OUTPUT_JSON_PATH
-    OUTPUT_JSON_PATH = extracted_output if extracted_output is not None else args.output_json
+    OUTPUT_JSON_PATH = extracted_output if extracted_output is not None else getattr(args, 'output_json', None)
     if OUTPUT_JSON_PATH is not None:
         setattr(args, "output_json", OUTPUT_JSON_PATH)
+        
     args.func(args)
 
 if __name__ == "__main__":

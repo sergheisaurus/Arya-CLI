@@ -1,0 +1,164 @@
+{
+    "groupId": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+    "resourceId": "Y0Sht8VWRHODt8Fy17f856iGdAAfNQg9IwfJ",
+    "name": "GARE-ALLAMAN TRANSPORTS (1)",
+    "tags": [
+        "CFF"
+    ],
+    "type": "project",
+    "modifiedAt": "2025-11-17T13:18:46.450Z",
+    "userId": "2bb15fe9-d546-4b9e-9107-0be39034031f",
+    "data": {
+        "pages": [
+            {
+                "apps": [
+                    {
+                        "style": "jsontable",
+                        "id": "datatable",
+                        "draggable": true,
+                        "resizable": true,
+                        "removable": true,
+                        "extended": true
+                    },
+                    {
+                        "id": "settings",
+                        "tname": "templates.duration",
+                        "default": true
+                    },
+                    {
+                        "id": "tags",
+                        "tname": "templates.tags",
+                        "default": true,
+                        "type": "tags"
+                    }
+                ],
+                "media": null,
+                "addApps": {},
+                "uid": "1641309632357mv9rqrmhrbr-0",
+                "order": "17e25ad7a1f",
+                "settings": {
+                    "preset": "default",
+                    "dur": "00:00:10",
+                    "refId": null,
+                    "frameBackgroundColorParsed": "#FFFFFF"
+                },
+                "tags": [
+                    "CFF"
+                ],
+                "datatable": {
+                    "choice0": "ALLAMAN",
+                    "backgroundColor": "#EB212E",
+                    "src": "https://transport.opendata.ch/v1/stationboard?station=[[GENEVE;COPPET;NYON;GLAND;ROLLE;ALLAMAN;ETOY;ST PREX;MORGES;RENENS;LAUSANNE]]&limit=15",
+                    "refresh": 600,
+                    "vertical": {
+                        "width": 1080,
+                        "top": 968,
+                        "left": 0,
+                        "height": 952
+                    },
+                    "cellHeight": 72,
+                    "rows": "stationboard",
+                    "textColor": "textColor",
+                    "editdata": true,
+                    "horizontal": {
+                        "width": 1920,
+                        "top": 544,
+                        "left": 0,
+                        "height": 536
+                    },
+                    "cells": "one,two,three,four,five,six",
+                    "activeTimestamp": 1641309636710,
+                    "header": "user",
+                    "lang": "fr_FR"
+                },
+                "datatable:six": {
+                    "property": "stop.platform",
+                    "fontSize": "auto",
+                    "textAlign": "end",
+                    "percent": "150px",
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:four": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "passList.3.station.name",
+                    "fontSize": "auto",
+                    "style": "text",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:one": {
+                    "filter": "time",
+                    "textAlign": "start",
+                    "property": "stop.departure",
+                    "fontSize": "auto",
+                    "style": "time",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "headerProperty": "0",
+                    "displayAlign": "center"
+                },
+                "datatable:two": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "passList.1.station.name",
+                    "fontSize": "auto",
+                    "style": "text",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:header": {
+                    "fontSize": "auto",
+                    "textAlign": "start",
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:five": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "to",
+                    "fontSize": "auto",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                },
+                "datatable:three": {
+                    "filter": "unique",
+                    "textAlign": "start",
+                    "property": "passList.2.station.name",
+                    "fontSize": "auto",
+                    "style": "text",
+                    "percent": null,
+                    "fontWeight": "normal",
+                    "displayAlign": "center"
+                }
+            }
+        ],
+        "development": false
+    },
+    "preview": {
+        "type": "svg",
+        "url": "https://arya.services.spinetix.com/v1/project/qsa/Y0Sht8VWRHODt8Fy17f856iGdAAfNQg9IwfJ/icon.svg?token=eyJraWQiOiJlWUZmQ1FMb29QUFI5R01tbEptaWxyN25LN3hPWDM0a0hpbG4wOEhYM253PSIsImFsZyI6IlJTMjU2In0.eyJlbnRpdGxlbWVudHMiOiJbXCJhcnlhXCIsXCJhY3RpdmF0ZVwiXSIsImN1c3RvbTp0YWdzIjoiW10iLCJzdWIiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjb2duaXRvOmdyb3VwcyI6WyJ1bmxlYXNoIiwiZGVhbGVyX2xlZCIsInRhZ3NfdXNlciIsInVzZXJfYWRtaW4iLCJhY2NvdW50X2FkbWluIiwiZXh0ZW5kZWQiLCJlbnRlcnByaXNlIl0sImlzcyI6Imh0dHBzOlwvXC9jb2duaXRvLWlkcC5ldS1jZW50cmFsLTEuYW1hem9uYXdzLmNvbVwvZXUtY2VudHJhbC0xX3NqY3poY1FDWCIsImNvZ25pdG86dXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIyYmIxNWZlOS1kNTQ2LTRiOWUtOTEwNy0wYmUzOTAzNDAzMWYiLCJjdXN0b206dG9zX2FjY2VwdF9kYXRlIjoiMjAyMC0wMS0yNCIsImFjY291bnRfZmVhdHVyZXMiOiJ7XCJwcm9vZk9mUGxheVwiOlwiYmFzaWNcIn0iLCJjdXN0b206cmVjZW50X2xvZ2luX2RhdGUiOiIyMDI1LTExLTE3VDEzOjE5OjQ5LjA2NVoiLCJvcmlnaW5fanRpIjoiOWUxZjgxNWEtM2ZjZi00Y2I5LTgwNjQtOGUxNDE1YmJlM2ZmIiwiYXVkIjoiYXQ2bGdxbnNucmp0YmhybDMwczZrbnZucyIsImN1c3RvbTpncm91cF9pZCI6IlYzcXpyYVVDekZiRkZSb040UkJUWnlFS0hOb1BtNGNTWEwwSWMxRlBEWSIsInRva2VuX3VzZSI6ImlkIiwiY3VzdG9tOmdyb3VwX3N0YWdlIjoicHJvZCIsImF1dGhfdGltZSI6MTc2MTIyMjMzNCwiZXhwIjoxNzYzMzg5MTg4LCJpYXQiOjE3NjMzODU1ODksImp0aSI6IjkwMWIwOTc1LWY2MzItNGJmMS1iMzVmLTc4ODg2OTYyYWFjNyJ9.g4i12XLiHuCATXCgxc66dJ9fvjfwvfZVeZ27gCi8z8ma6jYiPhEfSwC16SJoFCVAC97ciElJW3VNfuo28YdQQjgqh0TUYj0nG2q25yxzAzTuW6pNqodAYYiF867_tSwRPTiXQx1LVuNpunGEHOFwKtmBi1RYPELgp8R4A3NyHTQF9dqssWHsBKkhKy7aeOTVWSUcNhOOjgTY_WVkaW1oc6oZscboJ11ysDvSyDIicORZDtM2YRMNzbZV9oH17nsi2bnwSVCMwIfjG6DZp7b3Kc1pX6f3AvH4Rgv5XZhCkEmDP34p6uAXQ66VueYRpnDoL_s5y0MWxdDXguDvAK13aw&_=20251117T131846450Z20220104T151831772Z"
+    },
+    "post": {
+        "url": "https://spx-cloud-prod-uploads.s3.eu-central-1.amazonaws.com/",
+        "fields": {
+            "x-amz-meta-resourceid": "Y0Sht8VWRHODt8Fy17f856iGdAAfNQg9IwfJ",
+            "x-amz-meta-groupid": "V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY",
+            "acl": "private",
+            "bucket": "spx-cloud-prod-uploads",
+            "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+            "X-Amz-Credential": "ASIAT7ZPA3WUXCFB3KIT/20251117/eu-central-1/s3/aws4_request",
+            "X-Amz-Date": "20251117T132039Z",
+            "X-Amz-Security-Token": "IQoJb3JpZ2luX2VjEOX//////////wEaDGV1LWNlbnRyYWwtMSJIMEYCIQD+TANw9G4OX6zHcVeCWAxjcDkr1ioLypy9lo0eICD64AIhAOI8qiWm6G5pCkxpnZS9MozSC4oBeWGEMdiWSgemrh3wKqsDCK7//////////wEQABoMMjc0NDM5NjU4OTIxIgz7YUB0AHd5XcegQQcq/wIKq9qjCVjFPgrj+tS4rkbg81TTI/zwkhc8Czk+sCKwRr8B51cDQwLTfjHqDvqwdb+4RupJZ0HYCGFfRh0zmi1H7ePRnK0syWVbffGiHg5pj4YFkOYR+bUKxlKn/BAvHQF7H+pdYg3RCypDu+XRmg1kQ5xqdHAsCml6r8cNLND7LrDfix5is76vsgB6vBArZn/phQSQRPJWPZLs+Lf6wM+w/BKv5l7jKmFqpLi2buQ2maCCaXKAtWCU5mmk8In1TGhWmwL7vBYk8BiDgpSVD86aO+UrjXatig+CTJBc4tZcQFYUsPcdtk/EOeBf0Objdi65tkor4vW6wsvftHmzj07K+LjilUoUg9FlY9eHHA0DlkPI+ay47uarR0vcNtS+1B5IEo/clZe9jXozxv9iPBlB92GazP7RwUaFuOyiM7q7Wep10QV8zDo/YHxMGwsDTsTddtZZOl7hN4Nn2J6ffDuEPkvVjYj2e7+tyi29/0iCtWTrV3ya7YKp5gv8PHP9ITD4s+zIBjqcAWvdop6KmS255agidSlgPOmlPg2XShPy21G8OZXMJ0AFU66kQBfr8gCaJ2JWI30eAPuJHYt2fwm3Q4eryQoRYkuHFZ7xOE2Bg/FKVXO84dQtk5nj2CFjC16B3VBG3FTY37ffG24Y2YkoKL2Q74cE0FJTJWBvQYV2HpqCGPgWJr8pjbQ+SpZnD7JimE83cDcqGqcWiQuXeDXGuiD8uQ==",
+            "key": "project-uploads/V3qzraUCzFbFFRoN4RBTZyEKHNoPm4cSXL0Ic1FPDY/Y0Sht8VWRHODt8Fy17f856iGdAAfNQg9IwfJ/${filename}",
+            "Policy": "eyJleHBpcmF0aW9uIjoiMjAyNS0xMS0xN1QxNDoyMDozOVoiLCJjb25kaXRpb25zIjpbeyJ4LWFtei1tZXRhLXJlc291cmNlaWQiOiJZMFNodDhWV1JIT0R0OEZ5MTdmODU2aUdkQUFmTlFnOUl3ZkoifSx7IngtYW16LW1ldGEtZ3JvdXBpZCI6IlYzcXpyYVVDekZiRkZSb040UkJUWnlFS0hOb1BtNGNTWEwwSWMxRlBEWSJ9LHsiYWNsIjoicHJpdmF0ZSJ9LHsiYnVja2V0Ijoic3B4LWNsb3VkLXByb2QtdXBsb2FkcyJ9LHsiWC1BbXotQWxnb3JpdGhtIjoiQVdTNC1ITUFDLVNIQTI1NiJ9LHsiWC1BbXotQ3JlZGVudGlhbCI6IkFTSUFUN1pQQTNXVVhDRkIzS0lULzIwMjUxMTE3L2V1LWNlbnRyYWwtMS9zMy9hd3M0X3JlcXVlc3QifSx7IlgtQW16LURhdGUiOiIyMDI1MTExN1QxMzIwMzlaIn0seyJYLUFtei1TZWN1cml0eS1Ub2tlbiI6IklRb0piM0pwWjJsdVgyVmpFT1gvLy8vLy8vLy8vd0VhREdWMUxXTmxiblJ5WVd3dE1TSklNRVlDSVFEK1RBTnc5RzRPWDZ6SGNWZUNXQXhqY0RrcjFpb0x5cHk5bG8wZUlDRDY0QUloQU9JOHFpV202RzVwQ2t4cG5aUzlNb3pTQzRvQmVXR0VNZGlXU2dlbXJoM3dLcXNEQ0s3Ly8vLy8vLy8vL3dFUUFCb01NamMwTkRNNU5qVTRPVEl4SWd6N1lVQjBBSGQ1WGNlZ1FRY3Evd0lLcTlxakNWakZQZ3JqK3RTNHJrYmc4MVRUSS96d2toYzhDemsrc0NLd1JyOEI1MWNEUXdMVGZqSHFEdnF3ZGIrNFJ1cEpaMEhZQ0dGZlJoMHptaTFIN2VQUm5LMHN5V1ZiZmZHaUhnNXBqNFlGa09ZUitiVUt4bEtuL0JBdkhRRjdIK3BkWWczUkN5cER1K1hSbWcxa1E1eHFkSEFzQ21sNnI4Y05MTkQ3THJEZml4NWlzNzZ2c2dCNnZCQXJabi9waFFTUVJQSldQWkxzK0xmNndNK3cvQkt2NWw3akttRnFwTGkyYnVRMm1hQ0NhWEtBdFdDVTVtbWs4SW4xVEdoV213TDd2QllrOEJpRGdwU1ZEODZhTytVcmpYYXRpZytDVEpCYzR0WmNRRllVc1BjZHRrL0VPZUJmME9iamRpNjV0a29yNHZXNndzdmZ0SG16ajA3SytMamlsVW9VZzlGbFk5ZUhIQTBEbGtQSStheTQ3dWFyUjB2Y050UysxQjVJRW8vY2xaZTlqWG96eHY5aVBCbEI5MkdhelA3UndVYUZ1T3lpTTdxN1dlcDEwUVY4ekRvL1lIeE1Hd3NEVHNUZGR0WlpPbDdoTjRObjJKNmZmRHVFUGt2VmpZajJlNyt0eWkyOS8waUN0V1RyVjN5YTdZS3A1Z3Y4UEhQOUlURDRzK3pJQmpxY0FXdmRvcDZLbVMyNTVhZ2lkU2xnUE9tbFBnMlhTaFB5MjFHOE9aWE1KMEFGVTY2a1FCZnI4Z0NhSjJKV0kzMGVBUHVKSFl0MmZ3bTNRNGVyeVFvUllrdUhGWjd4T0UyQmcvRktWWE84NGRRdGs1bmoyQ0ZqQzE2QjNWQkczRlRZMzdmZkcyNFkyWWtvS0wyUTc0Y0UwRkpUSldCdlFZVjJIcHFDR1BnV0pyOHBqYlErU3BabkQ3SmltRTgzY0RjcUdxY1dpUXVYZURYR3VpRDh1UT09In0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJwcm9qZWN0LXVwbG9hZHMvVjNxenJhVUN6RmJGRlJvTjRSQlRaeUVLSE5vUG00Y1NYTDBJYzFGUERZL1kwU2h0OFZXUkhPRHQ4RnkxN2Y4NTZpR2RBQWZOUWc5SXdmSi8iXV19",
+            "X-Amz-Signature": "52a898a733f92b0fb75fdac3b556119216883ecaed38b776ff8a7079f41e8adc"
+        }
+    },
+    "validity": {},
+    "schedules": []
+}
